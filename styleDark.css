@@ -1,0 +1,555 @@
+/*================== Dark Mode Start =====================*/
+
+body.night{
+    background: #000;
+    color: #fff;
+}
+
+body.night header.sticky{
+    padding: 5px 100px;
+    background: #999;
+}
+body.night header.sticky .menu li a:hover{
+    color: #000;
+}
+body.night .menu li a{
+    position:relative;
+    color: #fff;
+    text-decoration: none;  
+    transition: all .3s;
+    letter-spacing: 2px;
+    font-weight: 500;
+    transition: .6s;
+}
+body.night .menu li a:hover{
+    color: #ccc;
+}
+body.night .menu li:hover .dropdown_menu{
+    position:absolute;
+    display:block; 
+    margin-top:10px; 
+    background-color: #999;
+    left:0;
+}
+body.night .description .desc_left h1{
+    font-size:60px;
+    font-weight: 700;
+    color:#fff;
+}
+body.night .description .desc_left p{
+    color:#fff;
+    font-size: 17.5px;
+    font-weight: 300;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+body.night .description .desc_right .text{
+    position: absolute;
+    color:#fff;
+    font-size:2rem;
+    font-weight: 400;
+    user-select:none;
+    pointer-events:none;      
+    animation: animate_circle 7.5s linear infinite;
+}
+body.night .section-title h2{
+    font-size:60px;
+    color:#999;
+    font-weight: 700;
+    margin:0;
+    position:relative;
+}
+
+body.night .agency .content p{
+    padding:1rem 0;
+    color:#fff;
+    line-height:2;
+}
+body.night .agency .content_border{        
+    border: 2px solid #999; 
+}
+body.night .studio .content .text-box p{
+    font-size:1.1em;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color:#fff;
+    padding:1rem 0;
+    line-height:2;
+}
+body.night .studio .text-box{    
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #fff;
+}
+body.night .studio .content .image img{
+    position: absolute;
+    width: 100%;
+    height:100%;
+    z-index: 222;
+    top:0;
+    left:0;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid #fff;
+}
+body.night .team{
+    position: relative;
+    color: #000;
+    padding-top:50px;
+    height:950px;    
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    margin-top: -200px;  
+}
+body.night .main-card .cards .card{
+    background-color: #fff;
+    width: calc(100% / 3 - 10px);
+    padding: 30px;
+    border-radius: 24px;
+    margin:  0 30px;
+    transition: all .4s ease;
+    z-index: 100; 
+}
+body.night .cards .card .content_card .image_card img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+    border-radius: 50%;
+    background:#000;
+    border: 3px solid #000;   
+}
+body.night .cards .card .content_card .media_icons a{
+    height: 35px;
+    width: 35px;
+    color: #000;
+    background: #ff676d;
+    margin: 0 4px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 33px;  
+    text-decoration: none;
+    font-size: 14px;
+    border: 2px solid transparent;
+    transition: all 0.4s ease;
+}
+
+body.night .cards .card .content_card .media_icons a:hover{
+    border-color: #ff676d;
+    color: #ff676d;
+    background: #000; 
+}
+
+body.night .team .button label{
+    height: 15px;
+    width:15px;
+    background: #fff;
+    margin: 0 4px; 
+    border-radius: 20px;
+    transition: all .5s ease;
+} 
+body.night footer{
+    position:relative;
+    width:100%;
+    min-height:200px;
+    background-color:#fff;
+    padding: 20px 50px;
+    bottom:0;
+    left:0;
+    box-shadow: 0 16px 70px -8px rgba(0, 0, 0, 0.25);
+    transition: background .3s linear;
+}
+body.night footer .wave{
+    position: absolute;
+    top:-100px;
+    left:0;
+    width: 100%;
+    height:100px;
+    background:url(../img/wave.png);
+    background-size: 1000px 100px;
+}
+body.night footer .desc_area p{
+    color: #333;
+    font-weight: 400;
+    line-height: 28px;
+}
+body.night footer .social_media a{
+    color: #333;
+    margin-right: 22px;
+    font-size: 24px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    border-width: 7.5px;
+    background-color: #fff;
+    text-align: center;
+}
+
+body.night footer .social_media a:hover{
+    color: #fff;    
+    margin-right: 22px;
+    font-size: 24px;
+    border: 1px solid #333;
+    border-radius: 50%;
+    border-width: 7.5px;
+    background-color: #333;
+    text-align: center;
+    letter-spacing: 2px;
+}
+body.night footer .service_name{
+    color: #000;
+    font-weight: 700;
+    font-size: 24px;
+}
+body.night footer .service_header li a{
+    color: #333;
+    font-weight: 400;
+    padding-bottom: 1px;
+}
+body.night footer .service_header li a:hover{
+    color: #111222;
+    border-bottom: 1px solid #111222;
+    transition: .3s ease;
+    font-weight: 600;
+    padding-bottom: 1px;
+}
+body.night footer hr{
+    height: 1px;
+    border: none;
+    background-color: #333;
+    margin-bottom: 1rem;
+}
+body.night footer .copy_right{
+    color: #333;
+    display: inline;
+    align-items: center;
+}
+body.night footer .tou a{
+    color: #333;
+    margin-left: 1.5rem;
+}
+body.night footer .tou a:hover{
+    color: #111222;
+    border-bottom: 1px solid #111222;
+    transition: .3s ease;
+    font-weight: 600;
+}
+body.night .contactUs .title h2{
+    color:#fff;
+    font-weight: 500;
+}
+body.night .strategie_branding .right p{
+    font-size:16px;
+    font-weight:500;
+    color:#fff;
+}
+body.night .menu li a{
+    color:#fff;
+}
+body.night .content_factory .left p{
+    font-size:16px;
+    font-weight:500;
+    color:#fff;
+    margin: 50px 0;
+}
+/*================== Dark Mode End =====================*/
+
+/*================== Responsive Start =====================*/
+@media screen and (max-width:768px){    
+    header{
+        position: relative;
+        display: block;        
+    }
+    header.sticky menu{
+        display:none;
+    }
+    header.sticky{
+        padding-top: 30px;
+    }
+    header .menu{
+        display: none;
+    }
+    header.active .logo{
+        margin-left:55%;
+        z-index:2000;
+    }
+    header.active .dark_light{
+        display: flex;
+        justify-content: center;
+        z-index:2000;
+    }    
+    header.active .menu{
+        position:absolute;
+        top:0;
+        right:0;
+        width:50%;
+        height:100vh;
+        background-color: #000;
+        flex-direction: column;
+        padding:2rem;
+        display: block;
+        display: flex;
+        justify-content: center;
+    }
+    header .menu li a{
+        color:#fff;
+    } 
+    body.night header.active .menu{
+        position:absolute;
+        top:0;
+        right:0;
+        width:50%;
+        min-height:100vh;
+        background-color: #999;
+        flex-direction: column;
+        padding:2rem;
+        display: block;
+        display: flex;
+        justify-content: center;
+    }
+    body.night header .menu li a{
+        color:#000;
+    }
+    .dropdown_menu{
+        margin-left:-50px;     
+    }
+    .hamburger-menu{
+        position: relative;
+        height: 4rem;
+        width: 3rem;
+        cursor: pointer;
+        float:right;
+        margin-top:-250px;
+        display: block;
+        z-index: 100;
+        background-color: #ec1839;
+    } 
+    header.sticky .hamburger-menu{
+        margin-left:30px;
+    }
+    .bar{
+        content: "";
+        position: relative;
+        width: 1.9rem;
+        height: 1.5px;
+        border-radius: 2px;
+        background-color: #000;
+        transition:0.5s;        
+        z-index: 100;
+    }    
+    .bar:before, .bar:after{
+        content:"";
+        position:absolute;
+        width: inherit;
+        height: inherit;
+        background-color:#000;
+        transition: 0.5s;
+        z-index:100;
+    }  
+    body.night .bar{
+        content: "";
+        position: relative;
+        width: 1.9rem;
+        height: 1.5px;
+        border-radius: 2px;
+        background-color: #fff;
+        transition:0.5s;        
+        z-index: 100;
+    }    
+    body.night .bar:before, .bar:after{
+        content:"";
+        position:absolute;
+        width: inherit;
+        height: inherit;
+        background-color:#fff;
+        transition: 0.5s;
+        z-index:100;
+    }  
+    .bar:before{
+        transform: translateY(-9px);
+    }
+    .bar:after{
+        transform: translateY(9px);
+    }
+    header.active .bar{
+        transform: rotate(360deg);
+        background-color: transparent;
+    }    
+    header.active .bar:before{
+        transform: translateY(0) rotate(45deg);
+    }
+    header.active .bar:after{
+        transform: translateY(0) rotate(-45deg);
+    }
+    .description{
+        position:relative;
+        width:100%;
+        min-height:200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .description .desc_left{
+        position: relative;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin: 60px 0;
+        min-height:200px;
+    }
+    .description .desc_left h1{
+        font-size:45px;
+        font-weight: 700;
+        color:#000;
+    }
+    .description .desc_right{
+        position: relative;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin: 60px 0;
+        min-height:200px;
+    }
+    .section-title h2{
+        font-size:40px;
+        color:#302e4d;
+        font-weight: 700;
+        margin:0;
+        position:relative;
+    }
+    .section-title h2::before{
+        content:'';
+        height:3px;
+        width:50px;
+        position:absolute;
+        top:100%;
+        left:0;
+        background-color: #ec1839;
+    }
+    .section-title h2::after{
+        content:'';
+        height:3px;
+        width:20px;
+        position:absolute;
+        top:100%;
+        left:0;
+        margin-top: 8px;
+        background-color: #ec1839;
+    }
+    .agency{
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;        
+    }
+    .image_agency{    
+        width:180px;
+        height:180px;  
+    }
+    .agency .content h3{
+        color:#45d0e4;
+        font-size: 35px;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+    .content_border{
+        width:250px;
+        min-height:500px;
+        margin-left: 50px;
+    }
+    .st_R, .sc_L{
+        right:0;
+    }
+    .agency .strategie_left{
+        padding-left:20px;
+    }
+    .agency .strategie_right{
+        padding-left:70px;
+    }
+    .agency .factory_left{
+        padding-left:20px; 
+    }
+    .agency .factory_right{
+        padding-left:0; 
+    }
+    .agency .social_left{
+        padding-left:20px; 
+    }
+    .agency .social_right{
+        padding-left:70px;     
+    }
+    .studio{
+        flex-wrap: wrap;
+        justify-content: left;
+    }  
+    .team .container {
+        width:100%;
+        padding: 80px;
+        margin-top: -100px;   
+        overflow: hidden;       
+    }
+    #two:checked ~ .main-card{
+        margin-left: -110%;
+        transition: all 1s ease;
+    }
+    .team .container .main-card{
+        width:200%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        transition: all 1s ease;
+    } 
+    .main-card .cards{    
+        width: calc(100% / 2 -10px);
+        display: flex;
+        justify-content:space-between;
+        margin:  0 10px; 
+        overflow: hidden;
+    }    
+    .main-card .cards .card{
+        width: calc(100% / 2);
+        margin:  0 30px; 
+        border-radius: 24px;
+        transition: all .4s ease;
+        z-index: 10;  
+    }
+    footer .content_footer{
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    footer .content_footer .profil{
+        position: relative;
+        margin-bottom: 30px;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width:100%;   
+        text-align: center;
+    }
+    footer .desc_area{
+        margin:auto;
+    }
+    footer .service_area{
+        flex-wrap: wrap;
+        justify-content: left;
+    }
+    footer .service_header{
+        margin-left:0;
+        margin-right: 40px;
+    }
+    footer .social_media{
+        margin-bottom: 1rem;
+    }
+    .footer_bottom{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .contactUs{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/*================== Responsive End =====================*/
+
+
